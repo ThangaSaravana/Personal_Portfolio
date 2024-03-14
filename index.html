@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Thanga Saravana - Portfolio</title>
+    <script src="https://kit.fontawesome.com/4b8e4491b0.js" crossorigin="anonymous"></script>
+    <script src="https://kit-pro.fontawesome.com/releases/v6.3.0/css/pro.min.css"crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" class="logo" alt="dhrush logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <br>
+            <br>
+            <div class="headertext">
+                <h3>Software Engineer</h3>
+                <h1>Hey there! I'm <span>Saravana</span>, the founder of <span>Code_with_Dhrush</span>, <br>crafting
+                    code with
+                    passion and precision.</h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- this is the about section of the code -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcol1">
+                    <img src="mypic2.jpg" alt="Saravana's Image">
+                </div>
+                <div class="aboutcol2">
+                    <h1 class="me">About Me</h1>
+                    <p>"Hello! I'm Saravana, a fervent coder and the visionary behind Code with Dhrush. I relish delving
+                        into intricate software engineering endeavors, where I meticulously craft pioneering solutions.
+                        As a proud cadet and under officer in NCC, I exemplify discipline and leadership. Through my
+                        blend of creativity and technical acumen, I am diligently shaping the trajectory of
+                        technological advancement."</p>
+                    <div class="tab-titles">
+                        <P class="tab-links active-link" onclick="opentab('skills')">Skills</P>
+                        <P class="tab-links" onclick="opentab('experience')">Experience</P>
+                        <P class="tab-links" onclick="opentab('education')">Education</P>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C++</span><br>Solving complex object oriented programs using C++</li>
+                            <li><span>Web Development</span><br>Desingning attractive front end models using HTML and
+                                CSS</li>
+                            <li><span>Salesforce CRM</span><br>Buliding custom applications for business development
+                                using Force.com</li>
+                            <li><span>Home Automation</span><br>Builded a Smart Home Synchronization project using
+                                google assistant, ESP32 and Blynk platform</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Software Engineer Trainee @Kadamba Technologies</span><br>Buliding customized
+                                front end applications to monitor various sports</li>
+                            <li><span>InPlant Trainee @Shree Raam Mills</span><br>Completed project under the domain
+                                "Efficient Energy Management and Fault Analysis"</li>
+                            <li><span>Embedded Systems Intern @Learn Bench India</span><br>Understanding basic concepts
+                                of Embedded Programming and bulided a Smart Light project using Arduino UNO</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.E EEE</span><br>Noorul Islam Centre For Higher Education <br>CGPA
+                                9.1/10<br>IIC(Member Institution Innovation Council)
+                                <br>CUO(National Cadet Corps)
+                            </li>
+                            <li><span>HSC</span><br>P.L.W.A Higher Secondary School <br>Grade 77%</li>
+                            <li><span>SSLC</span><br>P.L.W.A Higher Secondary School <br>Grade 94.2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- this section is about services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="me">My Services</h1>
+            <div class="serviceslist">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <P>I'm currently building websites with HTML, CSS and JavaScript but I enhancing myself by learning
+                        some front-end frameworks and back-end technologies. so, shortly I will become a full stack web
+                        companian for you.</P>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Hackerrank</h2>
+                    <P>I will help you to solve Hackerrank problems especially in C++. Let's solve problems together to
+                        enhance ourself</P>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    <h2>Code_with_Dhrush</h2>
+                    <P>i'm building a community, where we can discuss the problems regarding programming and
+                        webdevelopment. I also post the upcoming job updates and my daily tasks in Code_with_Dhrush</P>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- .......portfolio starts from here.......... -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="me">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="webdev.jpg" alt="web development">
+                    <div class="layer">
+                        <h3>Web Application for Dhrush Academy</h3>
+                        <p>Build a web Application for dhrush academy to display the courses and to advertise the
+                            content. </p>
+                        <a href="https://thangasaravana.github.io/Login-Page/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="hacker.png" alt="Hackerrank">
+                    <div class="layer">
+                        <h3>Hackerrank Github Repository</h3>
+                        <p>Solving object oriented problems in hckerrank, especially in C++ and uploading to the github
+                            repository on a daily basis </p>
+                        <a href="https://www.hackerrank.com/profile/ThangaSaravana" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="dlog.jpg" alt="Code_with_Dhrush">
+                    <div class="layer">
+                        <h3>Code_with_Dhrush</h3>
+                        <p>Building a community and discuss forum named Code_with_Dhrush. where we can synergize and
+                            thrive together</p>
+                        <a href="https://www.instagram.com/code_with_dhrush?igsh=bHhlMWlmN3RjMjZq" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ..............................contact section..................... -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="me">Conact Me</h1>
+                    <br>
+                    <p><i class="fa-solid fa-square-envelope"></i>btssaravana@gmail.com</p>
+                    <br>
+                    <p><i class="fa-solid fa-phone-volume"></i>9361622110</p>
+                    <div class="socialmediaicons">
+                        <a href="https://www.linkedin.com/in/thanga-saravana-697401227"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ThangaSaravana"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://wa.me/9361622110"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/code_with_dhrush?igsh=bHhlMWlmN3RjMjZq"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@code_with_dhrush3915"><i class="fa-brands fa-square-youtube"></i></a>
+                    </div>
+                    <a href="Thanga Saravana_Resume (1).pdf" download class="btn cv" id="zoomBtn">Download CV</a>
+                </div>
+                 <div class="contact-right"></div>
+                 <h1 class="me">Get in Touch!</h1>
+                 <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter your Name" required>
+                    <input type="email" name="Email" placeholder="Enter your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Please convey your suggestions here"></textarea>
+                    <button type="submit" class="btn cv" id="zoomBtn">submit</button>
+                 </form>
+                 <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i>Copyright @ Code_with_Dhrush</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.querySelectorAll(".tab-links");
+        var tabcontents = document.querySelectorAll(".tab-contents");
+
+        function opentab(tabname) {
+            // Hide all tab contents
+            tabcontents.forEach(tabcontent => {
+                tabcontent.classList.remove("active-tab");
+            });
+
+            // Show the selected tab content
+            var selectedTabContent = document.getElementById(tabname);
+            if (selectedTabContent) {
+                selectedTabContent.classList.add("active-tab");
+            }
+
+            // Update the active state of tab links
+            tablinks.forEach(tablink => {
+                if (tablink.innerText.trim() === tabname.charAt(0).toUpperCase() + tabname.slice(1)) {
+                    tablink.classList.add("active-link");
+                } else {
+                    tablink.classList.remove("active-link");
+                }
+            });
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwKw1MQkq0h1sOWXP7yWVQyRpELnMkoPQHHuf5bLK3QJMUfME-xhzjMFmaS4u9GgH8TIQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Your suggestions submitted successfully....Thank You for your valuable feedback...connect with me on linkedin to know more....."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        document.getElementById('zoomBtn').addEventListener('click', function() {
+  this.classList.toggle('zoom-out');
+});
+      </script>
+
+</body>
+
+</html>
